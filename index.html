@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Value of Personalization in Large Language Model Responses</title>
+<style>
+  :root{--theme:#0F5C6E;--ink:#1F2A2E;--muted:#5C6B70;--light:#E4EFF2}
+  body{margin:0;font-family:-apple-system,"Avenir Next",Segoe UI,Helvetica,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.5}
+  main{max-width:720px;margin:0 auto;padding:40px 20px 60px}
+  h1{color:var(--theme);font-size:1.9rem;line-height:1.2;margin:0 0 12px}
+  .authors{font-size:1.05rem;margin:0 0 4px}
+  .affil{color:var(--muted);font-size:.95rem;margin:0 0 24px}
+  .btn{display:inline-block;background:var(--theme);color:#fff;text-decoration:none;padding:12px 22px;border-radius:6px;font-weight:600;margin:0 8px 24px 0}
+  .btn.alt{background:var(--light);color:var(--theme)}
+  h2{font-size:1.1rem;color:var(--theme);margin:24px 0 8px}
+  p{margin:0 0 12px}
+  .cite{background:var(--light);padding:12px 16px;border-radius:6px;font-family:ui-monospace,Menlo,monospace;font-size:.85rem;white-space:pre-wrap}
+  footer{color:var(--muted);font-size:.85rem;margin-top:32px}
+</style>
+</head>
+<body>
+<main>
+<h1>The Value of Personalization in Large Language Model Responses</h1>
+<p class="authors">Andrey Fradkin, Yan (Stella) Si, Giorgos Zervas</p>
+<p class="affil">Questrom School of Business and Faculty of Computing &amp; Data Sciences, Boston University. September 2026.</p>
+
+<a class="btn" href="fradkin_si_zervas_personalization.pdf">Read the paper (PDF)</a>
+
+<h2>Abstract</h2>
+<p>We study how personalized LLM routing increases end-user utility. To do so, we estimate a random-coefficients demand model on Arena preference data, in which utility depends on the judged accuracy of a response as well as its style, the prompt, model identity, and a user's latent tastes, and simulate the effects of a router that picks a model based on the user, prompt, or user-prompt pair. Accuracy is the largest single driver of preference, with diminishing returns, and style preferences are not displaced by it. A prompt only router raises predicted mean per-user utility over the best single model, attaining a 53.8% model-implied head-to-head win rate. Allowing the router to personalize to each user's own tastes, rather than serving everyone the average user's pick, raises the win rate to 71.0% and accounts for about three quarters of the total utility gain. The allocation of responses includes all ten models we consider, which makes routing worthwhile and highlights that measured intelligence is not the only relevant model characteristic. Next, we investigate the feasibility of learning individual preferences using repeat interactions. We find that after forty feedback rounds, we can close 72% of the gap to the optimal router. We also consider the efficacy of verbalizing estimated tastes. This approach yields a 70.4% predicted preference for the intended user versus a non-verbalized prompt, and steering the baseline model alone gains about as much as the optimal router. Lastly, because these routers select among generated responses, we evaluate routers that choose a model before generation: the prompt alone is nearly worthless, but a taste vector learned from forty past choices combined with predicted response characteristics recovers 35% of the ex-post oracle gain without generating any candidate response.</p>
+
+<h2>Cite</h2>
+<div class="cite">Fradkin, Andrey, Yan Si, and Giorgos Zervas. 2026. "The Value of Personalization in Large Language Model Responses." Working paper, Boston University.</div>
+
+<footer>Presented at Empirical Methods in the Age of AI, Stanford, October 2026. Questions: ysib@bu.edu</footer>
+</main>
+</body>
+</html>
